@@ -20,17 +20,11 @@ module tb_Dec;
         .Y3(LED3)
     );
 
-    initial begin
-        
-        KEY1 = 0;
-        KEY2 = 0;
-        
-        
-        #100;
+    initial begin    
         KEY1 = 0; KEY2 = 0; 
         #100; KEY1 = 0; KEY2 = 1; 
         #100; KEY1 = 1; KEY2 = 0; 
-        #100; KEY1 = 1; KEY2 = 1; 
+        #100; KEY1 = 1; KEY2 = 1;  #100;
 
         $finish;
     end
