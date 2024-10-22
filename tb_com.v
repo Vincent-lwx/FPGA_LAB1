@@ -5,11 +5,13 @@ module tb_com;
 
     wire LED0;
     wire LED1;
+	 wire LED2;
    com exp(
 	.A(KEY1),
 	.B(KEY2),
-	.H(LED0),
-	.E(LED1)
+	.L(LED0),
+	.E(LED1),
+	.H(LED2)
 	
 	);
 	initial begin
